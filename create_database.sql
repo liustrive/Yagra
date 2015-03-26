@@ -1,3 +1,9 @@
+CREATE DATABASE IF NOT EXISTS `easeyagra`;
+
+DROP TABLE IF EXISTS `easeyagra`.`User`;
+DROP TABLE IF EXISTS `easeyagra`.`Tokens`;
+DROP TABLE IF EXISTS `easeyagra`.`Images`;
+
 use easeyagra;
 CREATE TABLE `User` (
   `user_name` varchar(32) NOT NULL,
@@ -24,3 +30,6 @@ CREATE TABLE `Images` (
   PRIMARY KEY USING HASH (`hashcode`),
   CONSTRAINT `easeyagra_image_fk` FOREIGN KEY (`user_name`) REFERENCES `User` (`user_name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+GRANT select, update, insert, delete ON easeyagra.* to `easeyagra`@`127.0.0.1` IDENTIFIED BY '!@#$easeyagra';
+FLUSH PRIVILEGES;
