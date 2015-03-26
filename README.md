@@ -5,9 +5,9 @@ Yagra模仿Gravatar的功能，完成了一个简单版的avatar hosting站点�
 
 ##设计
 ###特点
-* 程序要求基于CGI协议运行
+* 程序基于CGI协议运行
 * 除了mysql-python之外，仅使用Python标准库
-* 实现了一个简易的web框架以拆分功能逻辑和cgi基础操作
+* 实现了一个简易的web	框架以拆分功能逻辑和cgi基础操作
 * 拆分前后端设计，前端html的生成效仿Pelican的Template方案，后端视效无关，仅关心动态元素的生成
 * Template的套用有些naive……，基于批量替换实现
 
@@ -69,7 +69,6 @@ LoadModule rewrite_module modules/mod_rewrite.so
 	    RewriteEngine on
 	    RewriteRule ^avatar/([0-9a-f]{32})$ avatar.py?emailhash=$1
 	    RewriteRule ^([a-z]+)$ $1.py
-		RewriteRule ^web web/html/errordoc.html
 
 	    ErrorDocument 404 web/html/errordoc.html
 	
