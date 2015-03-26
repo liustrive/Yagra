@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>__USER_NICK__ home page</title>
+
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class='container'>
+    <div class="row">
+    <div class='col-md-4'></div>
+    <div class='col-md-4'><a href="/"><h1>Yagra</h1></a></div>
+    <div class='col-md-4'></div>
+    </div>
+    <div class="row">
+    <div class='col-md-4'></div>
+    <div class='col-md-4'><h3>Hi! __USER_NICK__</h3></div>
+    <div class='col-md-4'></div>
+    </div>
+    
+    <div class="row" style='margin-top:20px;'>
+    <div class='col-md-4'></div>
+    <div class='col-md-4'>
+        <div class='row'>
+            <div class='col-md-6'>
+            <img src='__USER_HEAD_IMG__' width='128px' class="img-thumbnail"></img>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-4'></div>
+    </div>
+
+    <div class="row" style='margin-top:20px;'>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+   <form action="upload.py" enctype="multipart/form-data" name='form' method='post' role='form'>
+        <div class="form-group">
+<p class="text-danger">__SERVER_MSG__</p>
+            <h4>上传头像</h4>
+            <input type='file' name='imgfile'></input>
+	    <h4>Or:</h4>
+	    <h4>图片链接</h4>
+            <input type='text' class="form-control" placeholder="图片地址" name='img_url'>
+            <p class="help-block">支持jpeg，png，bmp，gif图片</p>
+        </div>
+            <input type='submit' class='btn btn-info' value='上传'></input>
+    </form>
+    </div>
+    <div class="col-md-4"></div>
+    </div>
+<div class="row" style='margin-top:20px;'>
+    <div class='col-md-4'></div>
+    <div class='col-md-4'><h4>账户：__USER_NAME__</h4>
+	<h4>邮箱：__USER_EMAIL__</h4>
+<a href='logout' class="btn btn-info btn-lg" role="button">登出</a>
+    </div>
+    <div class='col-md-4'></div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

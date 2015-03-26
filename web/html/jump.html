@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yagra</title>
+
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class='container'>
+    <div class="row">
+    <div class='col-md-4'></div>
+    <div class='col-md-4'><a href="/"><h1>Yagra</h1></a></div>
+    <div class='col-md-4'></div>
+    </div>
+    <div class="row">
+    <div class='col-md-4'></div>
+    <div class='col-md-4'><h4>Yet Another GRAvatar</h4></div>
+    <div class='col-md-4'></div>
+    </div>
+    <div class="row" style='margin-top:34px;'>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+<h3><p class="text-danger">__SERVER_MSG__</p></h3>
+    
+  <script type="text/javascript">
+
+var t=3;//设定跳转的时间
+
+setInterval("refer()",1000); 
+function refer()
+{ 
+	
+if(t==0){
+		
+location="__JUMP_URL__";
+	
+}
+	
+document.getElementById('show').innerHTML="<h4>"+t+"秒后跳转至<a href='__JUMP_URL__'>__JUMP_URL__</a></h4>"; 
+//显示倒计时
+	
+t--; //计数器递减
+}
+</script>
+
+  </div>
+
+
+    <div class="col-md-4"></div>
+    </div>
+
+
+<div class="row" style='margin-top:34px;'>
+    <div class='col-md-4'></div>
+    <div class='col-md-4'><span id="show"></span></div>
+    <div class='col-md-4'></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
